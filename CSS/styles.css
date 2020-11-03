@@ -89,12 +89,9 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    object-fit: cover;
+    object-position: center;
 }
-
-/* p {
-    margin-top: 0;
-    margin-bottom: 0;
-} */
 
 :root {
     --main-text-color: rgba(117, 117, 117, 1);
@@ -225,8 +222,21 @@ img {
 
 .hero {
     text-align: center;
-    background-color: var(--dark-bg);
+    background-color: #c4c4c4;
+    background-image: radial-gradient(
+            circle at center,
+            rgba(196, 196, 196, 0.2),
+            rgba(47, 48, 58, 0.6)
+        ),
+        url(../images/img14.jpg);
+    background-size: 1600px 600px;
+    background-repeat: no-repeat;
 }
+
+/* .hero-container {
+    background-image: url(../images/img14.jpg);
+    background-size: 1600px 600px;
+} */
 
 .hero-content {
     display: flex;
