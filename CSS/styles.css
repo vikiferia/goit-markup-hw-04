@@ -310,6 +310,33 @@ img {
     margin-right: 30px;
 }
 
+.contant-box::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-color: var(--light-bg);
+    margin-bottom: 30px;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+}
+
 .section-title-features {
     font-weight: 700;
     font-size: 14px;
