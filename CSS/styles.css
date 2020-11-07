@@ -103,7 +103,8 @@ img {
     --light-bg: #f5f4fa;
     --dark-bg: #2f303a;
     --line: #eeeeee;
-    --social: #afb1b8;
+    --svg: #afb1b8;
+    --footer-social: rgba(255, 255, 255, 0.1);
 }
 
 .container {
@@ -462,7 +463,8 @@ img {
     width: 20px;
     height: 20px;
     display: flex;
-    fill: var(--social);
+    fill: var(--svg);
+    justify-content: center;
 }
 
 .social-icon-svg:hover,
@@ -503,12 +505,131 @@ img {
     text-align: center;
 }
 
+/* КЛИЕНТЫ */
+
+.clients-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-clients {
+    background-color: var(--white);
+}
+
+.clients-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--black);
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    width: calc((100% - 162px) / 6);
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+
+.grid .clients-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-list:hover,
+.clients-list:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.clients-icon-link {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.clients-icon-svg {
+    display: flex;
+    fill: var(--svg);
+}
+
+.clients-icon-svg:hover,
+.clients-icon-svg:focus {
+    fill: var(--accent-color);
+}
+
+.logo1 {
+    width: 45px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo2 {
+    width: 40px;
+    height: 52px;
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+.logo3 {
+    width: 41px;
+    height: 53px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.logo4 {
+    width: 80px;
+    height: 43px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.logo5 {
+    width: 59px;
+    height: 47px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+
+.logo6 {
+    width: 89px;
+    height: 46px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
 /* ФУТЕР */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--dark-bg);
     color: var(--footer-text-accent);
+}
+
+.footer-content {
+    display: flex;
+    width: calc((100% - 30px) / 2);
+}
+
+.footer-content-right {
+    width: calc((100% - 30px) / 2);
+}
+
+.footer-svg {
+    fill: var(--white);
+}
+
+.footer-link {
+    background-color: var(--footer-social);
 }
 
 .footer .logo {
