@@ -140,15 +140,16 @@ img {
 
 .header {
     background-color: var(--white);
+    border-bottom: 1px solid #ececec;
 }
 
 .header-container {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #ececec;
+
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -225,6 +226,7 @@ img {
     margin: 0;
     margin-right: 10px;
     padding: 0;
+    object-position: bottom;
     fill: var(--main-text-color);
 }
 
@@ -247,18 +249,21 @@ img {
 .smartphone:focus {
     fill: var(--accent-color);
 }
+
 /* Герой */
 
 .hero {
     text-align: center;
-    background-color: #c4c4c4;
+    /* background-color: #c4c4c4; */
     background-image: radial-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
         ),
         url(../images/img14.jpg);
     background-size: 1600px 600px;
+
     background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .hero-content {
@@ -467,8 +472,8 @@ img {
     justify-content: center;
 }
 
-.social-icon-svg:hover,
-.social-icon-svg:focus {
+.social-icon-link:hover .social-icon-svg,
+.social-icon-link:focus .social-icon-svg {
     fill: var(--white);
 }
 
@@ -554,8 +559,8 @@ img {
     fill: var(--svg);
 }
 
-.clients-icon-svg:hover,
-.clients-icon-svg:focus {
+.clients-icon-link:hover .clients-icon-svg,
+.clients-icon-link:focus .clients-icon-svg {
     fill: var(--accent-color);
 }
 
@@ -624,6 +629,32 @@ img {
     width: calc((100% - 30px) / 2);
 }
 
+.footer .social-icon {
+    margin: 0;
+    padding-right: 0;
+}
+
+.footer .social-list {
+    margin: 0;
+}
+
+.footer .social-list:not(:last-child) {
+    padding-right: 10px;
+}
+
+.footer-content-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    padding-top: 12px;
+}
+
 .footer-svg {
     fill: var(--white);
 }
@@ -648,12 +679,12 @@ img {
 
 .map {
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     color: var(--white);
 }
 
 .footer-mail {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
 }
 
 /* Страница Портфолио */
@@ -743,8 +774,8 @@ img {
 
 .gallery-portfolio:hover,
 .gallery-portfolio:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project {
