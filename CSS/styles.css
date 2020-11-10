@@ -146,7 +146,7 @@ img {
 .header-container {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
 
@@ -181,7 +181,8 @@ img {
 }
 
 .site-nav {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
 }
 
 .site-nav .item:not(:last-child) {
@@ -202,6 +203,7 @@ img {
 
 .contacts {
     display: inline-flex;
+    align-items: center;
 }
 
 .contacts .item:not(:last-child) {
@@ -228,6 +230,11 @@ img {
     padding: 0;
     object-position: bottom;
     fill: var(--main-text-color);
+}
+
+.phone {
+    display: flex;
+    align-items: center;
 }
 
 .envelope {
@@ -614,8 +621,8 @@ img {
 }
 
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 61px;
+    padding-bottom: 61px;
     background-color: var(--dark-bg);
     color: var(--footer-text-accent);
 }
@@ -665,7 +672,7 @@ img {
 
 .footer .logo {
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 }
 
 .logo-studio-wight {
