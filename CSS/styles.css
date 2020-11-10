@@ -774,8 +774,8 @@ img {
 
 .gallery-portfolio:hover,
 .gallery-portfolio:focus {
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 1px 1px 1px 1px rgba(110, 63, 63, 0.12),
+        1px 1px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(150, 47, 47, 0.16);
 }
 
 .project {
